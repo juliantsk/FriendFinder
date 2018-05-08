@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Survey Page</title>
+
+    <!-- Latest compiled and minified CSS & JS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="jumbotron">
+            <h1 class="text-center"><span class="glyphicon glyphicon-fire"></span> Friend Finder <span class="glyphicon glyphicon-fire"></span></h1>
+            <hr>
+            <h2 class="text-center">Take your survey!</h2>
+            <br>
+
+            <div class="text-center">
+                <a href="/"><button type="button" class="btn btn-lg btn-default"><span class="glyphicon glyphicon-home"> Home</span></button></a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12">
+
+                <!-- Reservation Page -->
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">Survey Questions</h4>
+                    </div>
+                    <div class="panel-body">
+                        <div class="panel-heading">
+                            <h5 class="panel-title">Please answer based on how much you agree with the question.</h5>
+                        </div>
+
+                        <form role="form">
+
+                            <div class="form-group">
+                                <label for="friend-name">Name</label>
+                                <input type="text" class="form-control" id="friend-name" required />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="image-url">Profile Picture (A default is provided, if you don't have one available.)</label>
+                                <input type="url" class="form-control" id="image-url" value="https://www.maxpixel.net/static/photo/1x/Animal-Feline-Cat-Cute-Domestic-Profile-Pet-644021.jpg" required />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="question1">Do you enjoy meeting new friends online?</label><br>
+                                <span class="text-left">Not at All</span><span class="float-right">Extremely</span>
+                                <input type="range" min="1" max="5" value="3" class="slider" id="question1">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="question2">Are the friendships you've started online better than the ones you've started in the "real world"?</label><br>
+                                <span class="float-left">Not at All</span><span class="float-right">Extremely</span>
+                                <input type="range" min="1" max="5" value="3" class="slider" id="question2">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="question2">Do you enjoy luxury?</label><br>
+                                <span class="float-left">Not at All</span><span class="float-right">Extremely</span>
+                                <input type="range" min="1" max="5" value="3" class="slider" id="question2">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="question3">Are you open to new experiences?</label><br>
+                                <span class="float-left">Not at All</span><span class="float-right">Extremely</span>
+                                <input type="range" min="1" max="5" value="3" class="slider" id="question3">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="question4">Are you shy around new people?</label><br>
+                                <span class="float-left">Not at All</span><span class="float-right">Extremely</span>
+                                <input type="range" min="1" max="5" value="3" class="slider" id="question4">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="question5">Do you value a good sense of humor?</label><br>
+                                <span class="float-left">Not at All</span><span class="float-right">Extremely</span>
+                                <input type="range" min="1" max="5" value="3" class="slider" id="question5">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="question6">Do you value free time?</label><br>
+                                <span class="float-left">Not at All</span><span class="float-right">Extremely</span>
+                                <input type="range" min="1" max="5" value="3" class="slider" id="question6">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="question7">Do you spend a lot of time on hobbies?</label><br>
+                                <span class="float-left">Not at All</span><span class="float-right">Extremely</span>
+                                <input type="range" min="1" max="5" value="3" class="slider" id="question7">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="question8">Are you extroverted?</label><br>
+                                <span class="float-left">Not at All</span><span class="float-right">Extremely</span>
+                                <input type="range" min="1" max="5" value="3" class="slider" id="question8">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="question9">Do you spend a lot of time on social media?</label><br>
+                                <span class="float-left">Not at All</span><span class="float-right">Extremely</span>
+                                <input type="range" min="1" max="5" value="3" class="slider" id="question9">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="question10">Are you a fan of sports?</label><br>
+                                <span class="float-left">Not at All</span><span class="float-right">Extremely</span>
+                                <input type="range" min="1" max="5" value="3" class="slider" id="question10">
+                            </div>
+
+                            <button type="submit" class="btn btn-primary submit">Submit</button>
+                            <input class="btn" type="reset">
+                        </form>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <footer class="footer">
+            <div class="container">
+                <p><a href="/api/tables">API Table Link</a> | <a href="/api/waitlist">API Wait List</a> | <a href="https://github.com/afhaque/HotRestaurant">GitHub Repo</a></p>
+            </div>
+        </footer>
+
+    </div>
+    <div id="modal" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">We Found Your Best Friend!</h5>
+                </div>
+                <div class="modal-body">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script type="text/javascript">
+    const modal = $("#modal"),
+        modalMessageDiv = $("div.modal-body");
+
+
+    $(".submit").on("click", function(event) {
+        event.preventDefault();
+
+        if ($("#friend-name").val() !== "") {
+            function getSum(total, num) {
+                return total + num;
+            }
+
+            let bestFriend = {
+                scoreDiff: 100000
+            };
+            // Here we grab the form elements
+            var newFriend = {
+                name: $("#friend-name").val().trim(),
+                photos: $("#image-url").val().trim(),
+                scores: []
+            };
+            for (i = 1; i <= 10; i++) {
+                newFriend.scores.push($("#question" + i).val());
+            }
+            console.log(newFriend);
+
+            $.get("api/friends", (friends) => {
+                let friendship;
+                for (i = 0; friends[i]; i++) {
+                    const otherScores = friends[i].scores,
+                        scores = newFriend.scores;
+                    friendship = scores.map((score, i) => {
+                        return Math.abs(score - otherScores[i]);
+                    });
+                    console.log(friendship);
+                    friendship = friendship.reduce(getSum);
+                    console.log(friendship);
+                    if (friendship < bestFriend.scoreDiff) {
+                        bestFriend.friend = friends[i];
+                        bestFriend.scoreDiff = friendship;
+                    }
+                    console.log(bestFriend);
+                }
+                modal.show();
+                modalMessageDiv.html(`<h1>Your best friend is ${bestFriend.friend.name}</h1>`);
+
+                $.post("/api/friend", newFriend,
+                    function(data) {
+
+                        if (data) {
+                            // Clear the form when submitting
+                            $("#friend-name").val("");
+                            $("#image-url").val("https://www.maxpixel.net/static/photo/1x/Animal-Feline-Cat-Cute-Domestic-Profile-Pet-644021.jpg");
+                            for (i = 1; i <= 10; i++) {
+                                $("#question" + i).val(3);
+                            }
+                            console.log(newFriend);
+                        } else {
+                            alert("Sorry, there was an error");
+                        }
+                    });
+            });
+        } else {
+            alert("Please provide a name");
+        }
+    });
+</script>
